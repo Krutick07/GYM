@@ -1,0 +1,43 @@
+/* Wrapper to contain both left and right doors */
+.door-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    z-index: 1000;
+    pointer-events: none; /* Prevent interaction during animation */
+  }
+  
+  /* Door base styles */
+  .door {
+    height: 100%;
+    width: 50%; /* Each door takes up half of the screen */
+    background-color: #F6DCBF;
+    transition: transform 0.5s ease-out; /* Smooth animation for door movement */
+  }
+  
+  /* Left door moves to the left */
+  .door-left {
+    transform: translateX(0); 
+  }
+  
+  /* Right door moves to the right */
+  .door-right {
+    transform: translateX(0);
+  }
+  
+  /* Element inside the left door */
+  .element-left {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Element inside the right door */
+  .element-right {
+    width: 100%;
+    height: 100%;
+  }
+  
+    
